@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUser"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMessageImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvUserMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/ivUserMe"
+        app:layout_constraintStart_toEndOf="@id/ivUser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Coding Raz" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMessageImage"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitStart"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivUserMe"
+        app:layout_constraintStart_toEndOf="@id/ivUser"
+        app:layout_constraintTop_toBottomOf="@id/tvUserMessage"
+        tools:src="@drawable/ic_launcher_background"
+        tools:visibility="visible" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/ivUserMe"
+        app:layout_constraintStart_toEndOf="@+id/ivUser"
+        app:layout_constraintTop_toBottomOf="@+id/ivMessageImage"
+        tools:text="00:00:00" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUserMe"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMessageImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

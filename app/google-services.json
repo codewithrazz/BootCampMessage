@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "376085160853",
+    "project_id": "bootcamp-bdbab",
+    "storage_bucket": "bootcamp-bdbab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376085160853:android:362c946acc8fa802cd4c9c",
+        "android_client_info": {
+          "package_name": "com.codingraz.bootcamp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEcXrL_oVcrkYh74M4MCS2UrEaR3acwq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
